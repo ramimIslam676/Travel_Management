@@ -40,7 +40,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Booking.cs" />
     <Compile Include="Entity\MySqlDataAccess.cs" />
+    <Compile Include="Entity\Payment.cs" />
+    <Compile Include="Entity\Trip.cs" />
     <Compile Include="Entity\Users.cs" />
   </ItemGroup>
   <ItemGroup>
