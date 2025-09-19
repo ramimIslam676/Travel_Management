@@ -1,4 +1,5 @@
 ﻿using Business.Layer.Repository;
+using Data.Layer.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,13 @@ namespace Final_Project
 {
     public partial class LoginFrame : Form
     {
+        MySqlDataAccess dataAccess;
+        Users users;
         public LoginFrame()
         {
             InitializeComponent();
+            dataAccess = new MySqlDataAccess();
+            users = new Users();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -35,9 +40,57 @@ namespace Final_Project
             }
             else
             {
-                this.Hide();
-                AdminForm adminForm = new AdminForm();
-                adminForm.Show();
+                var sql = $"SELECT * FROM Users WHERE user_phn = '{tbPhnNumber.Text}' AND user_pass = '{tbPassword.Text}'";
+                DataTable userType = dataAccess.Execute(sql);
+                string type = userType.Rows[0]["user_type"].ToString();
+                if (type == UserTypeEnum.Admin.ToString())
+                {
+                    users.UserId = Convert.ToInt32(userType.Rows[0]["user_id"]);
+                    users.UserEmail = userType.Rows[0]["user_email"].ToString();
+                    users.UserName = userType.Rows[0]["user_name"].ToString();
+                    users.UserPhone = userType.Rows[0]["user_phn"].ToString();
+                    users.UserAddress = userType.Rows[0]["user_address"].ToString();
+                    users.UserType = Convert.ToInt32(UserTypeEnum.Admin);
+                    users.UserPass = userType.Rows[0]["user_pass"].ToString();
+
+                    AdminForm adminForm = new AdminForm(users);
+                    this.Hide();
+                    adminForm.Show();
+                }
+                else if (type == UserTypeEnum.Organizer.ToString())
+                {
+                    users.UserId = Convert.ToInt32(userType.Rows[0]["user_id"]);
+                    users.UserEmail = userType.Rows[0]["user_email"].ToString();
+                    users.UserName = userType.Rows[0]["user_name"].ToString();
+                    users.UserPhone = userType.Rows[0]["user_phn"].ToString();
+                    users.UserAddress = userType.Rows[0]["user_address"].ToString();
+                    users.UserType = Convert.ToInt32(UserTypeEnum.Organizer);
+                    users.UserPass = userType.Rows[0]["user_pass"].ToString();
+
+                    OrganizerForm organizerFrame = new OrganizerForm(users);
+                    this.Hide();
+                    organizerFrame.Show();
+                }
+                else if (type == UserTypeEnum.Customer.ToString())
+                {
+                    users.UserId = Convert.ToInt32(userType.Rows[0]["user_id"]);
+                    users.UserEmail = userType.Rows[0]["user_email"].ToString();
+                    users.UserName = userType.Rows[0]["user_name"].ToString();
+                    users.UserPhone = userType.Rows[0]["user_phn"].ToString();
+                    users.UserAddress = userType.Rows[0]["user_address"].ToString();
+                    users.UserType = Convert.ToInt32(UserTypeEnum.Customer);
+                    users.UserPass = userType.Rows[0]["user_pass"].ToString();
+
+                    CustomerForm customerForm = new CustomerForm(users);
+                    this.Hide();
+                    customerForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid user type.");
+                    return;
+                }
+
             }
         }
     }

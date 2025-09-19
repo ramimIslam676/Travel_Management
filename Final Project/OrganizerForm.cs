@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.Layer.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace Final_Project
 {
     public partial class OrganizerForm : Form
     {
-        public OrganizerForm()
+        Users OrganizerUser;
+        public OrganizerForm(Users user)
         {
             InitializeComponent();
+            OrganizerUser = user;
+            this.Text = $"Welcome {OrganizerUser.UserName}";
         }
     }
 }

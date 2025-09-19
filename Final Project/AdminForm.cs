@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.Layer.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace Final_Project
 {
     public partial class AdminForm : Form
     {
-        public AdminForm()
+        Users AdminUser;
+        public AdminForm(Users user)
         {
             InitializeComponent();
+            AdminUser = user;
+            this.Text = $"Welcome {AdminUser.UserName}";
         }
     }
 }

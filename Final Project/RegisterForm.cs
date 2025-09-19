@@ -63,15 +63,35 @@ namespace Final_Project
                 MessageBox.Show("Please agree to the terms and conditions");
                 return;
             }
+            var sqlEmailCheck = $"SELECT * FROM Users WHERE user_email = '{tbEmail.Text}';";
 
-            var sql = $"INSERT INTO Users (user_name, user_email," +
+            DataTable chkemail = dataAccess.Execute(sqlEmailCheck);
+            int result1 = chkemail.Rows.Count;
+            if (result1 > 0)
+            {
+                MessageBox.Show("Email already exists. Use Different Email");
+                return;
+            }
+
+            var sqlPhnCheck = $"SELECT * FROM Users WHERE user_phn = '{tbPhnNumber.Text}';";
+
+            DataTable chkphn = dataAccess.Execute(sqlPhnCheck);
+            int result2 = chkphn.Rows.Count;
+
+            if (result2 > 0)
+            {
+                MessageBox.Show("Phone number already exists. Use Different Number");
+                return;
+            }
+
+            var sqlRegister = $"INSERT INTO Users (user_name, user_email," +
                 $"user_pass, user_address, user_phn, user_type) VALUES " +
                 $"('{tbUserName.Text}', '{tbEmail.Text}', '{tbPassword.Text}', " +
                 $"'{tbAddress.Text}', '{tbPhnNumber.Text}', '{comboBoxUser.SelectedItem.ToString()}')";
 
-            int results = dataAccess.ExecuteNonQuery(sql);
+            int results3 = dataAccess.ExecuteNonQuery(sqlRegister);
 
-            if (results > 0)
+            if (results3 > 0)
             {
                 MessageBox.Show($"Registration Successful as {comboBoxUser.SelectedItem.ToString()}");
                 this.Hide();

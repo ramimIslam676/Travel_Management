@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.Layer.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace Final_Project
 {
     public partial class CustomerForm : Form
     {
-        public CustomerForm()
+        Users CustomerUser;
+        public CustomerForm(Users user)
         {
             InitializeComponent();
+            CustomerUser = user;
+            this.Text = $"Welcome {CustomerUser.UserName}";
         }
     }
 }
