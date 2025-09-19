@@ -27,6 +27,7 @@ namespace Final_Project
             comboBoxUser.Items.Add("Organizer");
 
             comboBoxUser.SelectedIndex = 0;
+            comboBoxUser.DropDownStyle = ComboBoxStyle.DropDownList;
 
         }
 
