@@ -40,6 +40,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Repository\TripRepo.cs" />
     <Compile Include="Repository\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
