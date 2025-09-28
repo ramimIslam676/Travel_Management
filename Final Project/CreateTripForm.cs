@@ -18,7 +18,13 @@ namespace Final_Project
     {
         Users OrganizerUser;
         Trip EditingTrip;  
+        Users Users;
+        int TotalSeat;
         TripRepo tripRepo = new TripRepo();
+        public CreateTripForm()
+        {
+            InitializeComponent();
+        }
         public CreateTripForm(Users user)
         {
 
@@ -113,6 +119,8 @@ namespace Final_Project
 
                 this.DialogResult = DialogResult.OK;
                 this.Close();
+                CustomerForm customerForm= new CustomerForm(Users,TotalSeat);
+                customerForm.Show();
             }
             catch (Exception ex)
             {
@@ -124,6 +132,26 @@ namespace Final_Project
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numTotal_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTripName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateTripForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
