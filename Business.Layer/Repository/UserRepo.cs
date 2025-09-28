@@ -17,6 +17,15 @@ namespace Business.Layer.Repository
 
         }
 
+        public DataTable GetAllUsers()
+        {
+            DataTable dataTable;
+            var sql = "SELECT * FROM Users";
+            var cmd = dataAccess.GetCommand(sql);
+            dataTable = dataAccess.Execute(cmd);
+            return dataTable;
+        }
+
         public bool IsUserValidForLogin(string phoneNumber, string password)
         {
             DataTable dataTable;

@@ -98,11 +98,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminAddAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAddAdminForm.Designer.cs">
+      <DependentUpon>AdminAddAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBookingForm.Designer.cs">
+      <DependentUpon>AdminBookingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaymentForm.Designer.cs">
+      <DependentUpon>AdminPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTripForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTripForm.Designer.cs">
+      <DependentUpon>AdminTripForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUserForm.Designer.cs">
+      <DependentUpon>AdminUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CreateTripForm.cs">
       <SubType>Form</SubType>
@@ -136,6 +166,24 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminAddAdminForm.resx">
+      <DependentUpon>AdminAddAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBookingForm.resx">
+      <DependentUpon>AdminBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaymentForm.resx">
+      <DependentUpon>AdminPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTripForm.resx">
+      <DependentUpon>AdminTripForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUserForm.resx">
+      <DependentUpon>AdminUserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateTripForm.resx">
       <DependentUpon>CreateTripForm.cs</DependentUpon>
     </EmbeddedResource>

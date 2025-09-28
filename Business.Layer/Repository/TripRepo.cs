@@ -95,5 +95,12 @@ namespace Business.Layer.Repository
 
             return dataAccess.ExecuteNonQuery(cmd);
         }
+
+        public DataTable GetAllTrips()
+        {
+            var sql = "SELECT * FROM Trip";
+            var cmd = dataAccess.GetCommand(sql);
+            return dataAccess.Execute(cmd);
+        }
     }
 }
