@@ -16,11 +16,13 @@ namespace Final_Project
     {
         MySqlDataAccess dataAccess;
         Users users;
+        int trip_id;
         public LoginFrame()
         {
             InitializeComponent();
             dataAccess = new MySqlDataAccess();
             users = new Users();
+             
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -81,14 +83,9 @@ namespace Final_Project
                     users.UserType = Convert.ToInt32(UserTypeEnum.Customer);
                     users.UserPass = userType.Rows[0]["user_pass"].ToString();
 
-                    CustomerForm customerForm = new CustomerForm(users);
+                    CustomerForm cf = new CustomerForm(this, users);
                     this.Hide();
-                    customerForm.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Invalid user type.");
-                    return;
+                    cf.Show();
                 }
 
             }

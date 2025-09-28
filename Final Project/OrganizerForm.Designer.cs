@@ -86,7 +86,7 @@
             this.dgvTrips.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTrips.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvTrips.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTrips.Location = new System.Drawing.Point(21, 72);
+            this.dgvTrips.Location = new System.Drawing.Point(22, 83);
             this.dgvTrips.Name = "dgvTrips";
             this.dgvTrips.RowHeadersVisible = false;
             this.dgvTrips.RowHeadersWidth = 51;
@@ -94,6 +94,7 @@
             this.dgvTrips.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTrips.Size = new System.Drawing.Size(784, 280);
             this.dgvTrips.TabIndex = 2;
+            this.dgvTrips.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTrips_CellContentClick);
             // 
             // lnkLogout
             // 
@@ -106,7 +107,7 @@
             this.lnkLogout.LinkColor = System.Drawing.Color.DarkSlateGray;
             this.lnkLogout.Location = new System.Drawing.Point(739, 24);
             this.lnkLogout.Name = "lnkLogout";
-            this.lnkLogout.Size = new System.Drawing.Size(66, 25);
+            this.lnkLogout.Size = new System.Drawing.Size(80, 32);
             this.lnkLogout.TabIndex = 4;
             this.lnkLogout.TabStop = true;
             this.lnkLogout.Text = "Logout";
@@ -119,7 +120,7 @@
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.Location = new System.Drawing.Point(13, 13);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(349, 45);
+            this.lbTitle.Size = new System.Drawing.Size(425, 54);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Organizer Dashboard";
             // 

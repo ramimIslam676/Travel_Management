@@ -114,5 +114,10 @@ namespace Final_Project
             this.Hide();
             new LoginFrame().Show();
         }
+
+        private void dgvTrips_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

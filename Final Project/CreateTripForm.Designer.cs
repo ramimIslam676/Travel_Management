@@ -69,6 +69,7 @@
             this.txtTripName.Name = "txtTripName";
             this.txtTripName.Size = new System.Drawing.Size(329, 26);
             this.txtTripName.TabIndex = 0;
+            this.txtTripName.TextChanged += new System.EventHandler(this.txtTripName_TextChanged);
             // 
             // contextMenuStrip1
             // 
@@ -179,6 +180,7 @@
             this.numTotal.Name = "numTotal";
             this.numTotal.Size = new System.Drawing.Size(321, 26);
             this.numTotal.TabIndex = 4;
+            this.numTotal.ValueChanged += new System.EventHandler(this.numTotal_ValueChanged);
             // 
             // numAvailable
             // 
@@ -200,6 +202,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(329, 26);
             this.txtPrice.TabIndex = 6;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // mySqlCommand1
             // 
@@ -265,6 +268,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CreateTripForm";
             this.Text = "CreateTripForm";
+            this.Load += new System.EventHandler(this.CreateTripForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numTotal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numAvailable)).EndInit();
             this.ResumeLayout(false);
