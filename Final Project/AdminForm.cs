@@ -55,5 +55,12 @@ namespace Final_Project
             AdminAddAdminForm addAdminForm = new AdminAddAdminForm();
             addAdminForm.Show();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginFrame loginFrame = new LoginFrame();
+            loginFrame.Show();
+        }
     }
 }

@@ -104,5 +104,12 @@ namespace Final_Project
                 return;
             }
         }
+
+        private void btnReturnLogIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginFrame loginFrame = new LoginFrame();
+            loginFrame.Show();
+        }
     }
 }

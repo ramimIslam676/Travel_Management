@@ -43,6 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnReturnLogIn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -195,11 +196,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "User Name";
             // 
+            // btnReturnLogIn
+            // 
+            this.btnReturnLogIn.Location = new System.Drawing.Point(652, 393);
+            this.btnReturnLogIn.Name = "btnReturnLogIn";
+            this.btnReturnLogIn.Size = new System.Drawing.Size(99, 32);
+            this.btnReturnLogIn.TabIndex = 2;
+            this.btnReturnLogIn.Text = "Log In";
+            this.btnReturnLogIn.UseVisualStyleBackColor = true;
+            this.btnReturnLogIn.Click += new System.EventHandler(this.btnReturnLogIn_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 488);
+            this.Controls.Add(this.btnReturnLogIn);
             this.Controls.Add(this.groupBox1);
             this.Name = "RegisterForm";
             this.Text = "RegisterForm";
@@ -226,5 +238,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnReturnLogIn;
     }
 }
