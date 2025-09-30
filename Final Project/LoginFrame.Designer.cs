@@ -35,11 +35,13 @@
             this.tbPhnNumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbShowPassword = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbShowPassword);
             this.groupBox1.Controls.Add(this.btnRegister);
             this.groupBox1.Controls.Add(this.btnLogin);
             this.groupBox1.Controls.Add(this.tbPassword);
@@ -80,7 +82,6 @@
             this.tbPassword.Location = new System.Drawing.Point(180, 117);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(256, 26);
             this.tbPassword.TabIndex = 9;
             // 
@@ -112,6 +113,16 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Phone Number";
             // 
+            // cbShowPassword
+            // 
+            this.cbShowPassword.AutoSize = true;
+            this.cbShowPassword.Location = new System.Drawing.Point(411, 120);
+            this.cbShowPassword.Name = "cbShowPassword";
+            this.cbShowPassword.Size = new System.Drawing.Size(22, 21);
+            this.cbShowPassword.TabIndex = 12;
+            this.cbShowPassword.UseVisualStyleBackColor = true;
+            this.cbShowPassword.CheckedChanged += new System.EventHandler(this.cbShowPassword_CheckedChanged);
+            // 
             // LoginFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -120,6 +131,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "LoginFrame";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.LoginFrame_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -135,6 +147,7 @@
         private System.Windows.Forms.TextBox tbPhnNumber;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox cbShowPassword;
     }
 }
 

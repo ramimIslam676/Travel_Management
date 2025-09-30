@@ -16,7 +16,6 @@ namespace Final_Project
     {
         MySqlDataAccess dataAccess;
         Users users;
-        int trip_id;
         public LoginFrame()
         {
             InitializeComponent();
@@ -89,6 +88,22 @@ namespace Final_Project
                 }
 
             }
+        }
+
+        private void cbShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbShowPassword.Checked) { 
+                tbPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                tbPassword.PasswordChar = '●';
+            }
+        }
+
+        private void LoginFrame_Load(object sender, EventArgs e)
+        {
+            tbPassword.PasswordChar = '●';
         }
     }
 }
