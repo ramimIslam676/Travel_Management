@@ -14,11 +14,13 @@ namespace Final_Project
     public partial class AdminAddAdminForm : Form
     {
         MySqlDataAccess dataAccess;
-        public AdminAddAdminForm()
+        Users Ausers;
+        public AdminAddAdminForm(Users ausers)
         {
             InitializeComponent();
             dataAccess = new MySqlDataAccess();
             populateCombobox();
+            Ausers = ausers;
         }
 
         public void populateCombobox()
@@ -96,8 +98,7 @@ namespace Final_Project
             {
                 MessageBox.Show($"Registration Successful as {comboBoxUser.SelectedItem.ToString()}");
                 this.Hide();
-                LoginFrame loginFrame = new LoginFrame();
-                loginFrame.Show();
+                
             }
             else
             {

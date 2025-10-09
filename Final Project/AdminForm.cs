@@ -52,7 +52,7 @@ namespace Final_Project
 
         private void btnAddAdmin_Click(object sender, EventArgs e)
         {
-            AdminAddAdminForm addAdminForm = new AdminAddAdminForm();
+            AdminAddAdminForm addAdminForm = new AdminAddAdminForm(AdminUser);
             addAdminForm.Show();
         }
 

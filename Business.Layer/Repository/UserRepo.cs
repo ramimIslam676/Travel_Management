@@ -42,5 +42,22 @@ namespace Business.Layer.Repository
 
             return false;
         }
+
+        public bool UpdateUser(Users u)
+        {
+            var sql = @"UPDATE Users SET user_name = @name, user_email = @email, 
+                        user_pass = @pass, user_phn = @phn, user_address = @addr, 
+                        user_type = @type WHERE user_id = @id";
+            var cmd = dataAccess.GetCommand(sql);
+            cmd.Parameters.AddWithValue("@name", u.UserName);
+            cmd.Parameters.AddWithValue("@email", u.UserEmail);
+            cmd.Parameters.AddWithValue("@pass", u.UserPass);
+            cmd.Parameters.AddWithValue("@phn", u.UserPhone);
+            cmd.Parameters.AddWithValue("@addr", u.UserAddress);
+            cmd.Parameters.AddWithValue("@type", ((UserTypeEnum)u.UserType).ToString());
+            cmd.Parameters.AddWithValue("@id", u.UserId);
+            int rowsAffected = dataAccess.ExecuteNonQuery(cmd);
+            return rowsAffected > 0;
+        }
     }
 }

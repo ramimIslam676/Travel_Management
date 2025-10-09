@@ -40,14 +40,14 @@
             this.dgvBookingList.Name = "dgvBookingList";
             this.dgvBookingList.RowHeadersWidth = 62;
             this.dgvBookingList.RowTemplate.Height = 28;
-            this.dgvBookingList.Size = new System.Drawing.Size(471, 304);
+            this.dgvBookingList.Size = new System.Drawing.Size(503, 331);
             this.dgvBookingList.TabIndex = 0;
             // 
             // AdminBookingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(919, 483);
             this.Controls.Add(this.dgvBookingList);
             this.Name = "AdminBookingForm";
             this.Text = "AdminBookingForm";
