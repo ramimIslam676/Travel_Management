@@ -262,6 +262,7 @@
             this.Controls.Add(this.txtTripName);
             this.Controls.Add(this.lbTripName);
             this.Name = "CreateTripForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateTripForm";
             this.Load += new System.EventHandler(this.CreateTripForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numTotal)).EndInit();

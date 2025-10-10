@@ -57,11 +57,12 @@
             // 
             this.dgvTripList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvTripList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTripList.Location = new System.Drawing.Point(24, 23);
+            this.dgvTripList.Location = new System.Drawing.Point(21, 18);
+            this.dgvTripList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvTripList.Name = "dgvTripList";
             this.dgvTripList.RowHeadersWidth = 62;
             this.dgvTripList.RowTemplate.Height = 28;
-            this.dgvTripList.Size = new System.Drawing.Size(612, 407);
+            this.dgvTripList.Size = new System.Drawing.Size(544, 326);
             this.dgvTripList.TabIndex = 0;
             this.dgvTripList.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTripList_CellContentDoubleClick);
             // 
@@ -84,18 +85,21 @@
             this.groupBox1.Controls.Add(this.tbDescription);
             this.groupBox1.Controls.Add(this.tbPrice);
             this.groupBox1.Controls.Add(this.tbTripName);
-            this.groupBox1.Location = new System.Drawing.Point(658, 12);
+            this.groupBox1.Location = new System.Drawing.Point(585, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(472, 556);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(420, 445);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Trip Update";
             // 
             // btnUpdateTrip
             // 
-            this.btnUpdateTrip.Location = new System.Drawing.Point(197, 500);
+            this.btnUpdateTrip.Location = new System.Drawing.Point(175, 400);
+            this.btnUpdateTrip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateTrip.Name = "btnUpdateTrip";
-            this.btnUpdateTrip.Size = new System.Drawing.Size(203, 35);
+            this.btnUpdateTrip.Size = new System.Drawing.Size(180, 28);
             this.btnUpdateTrip.TabIndex = 16;
             this.btnUpdateTrip.Text = "Update Trip";
             this.btnUpdateTrip.UseVisualStyleBackColor = true;
@@ -104,140 +108,150 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(44, 398);
+            this.label8.Location = new System.Drawing.Point(39, 318);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 20);
+            this.label8.Size = new System.Drawing.Size(75, 16);
             this.label8.TabIndex = 15;
             this.label8.Text = "Description";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(44, 352);
+            this.label7.Location = new System.Drawing.Point(39, 282);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 20);
+            this.label7.Size = new System.Drawing.Size(38, 16);
             this.label7.TabIndex = 14;
             this.label7.Text = "Price";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(44, 311);
+            this.label6.Location = new System.Drawing.Point(39, 249);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 20);
+            this.label6.Size = new System.Drawing.Size(102, 16);
             this.label6.TabIndex = 13;
             this.label6.Text = "Available Seats";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(44, 267);
+            this.label5.Location = new System.Drawing.Point(39, 214);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 20);
+            this.label5.Size = new System.Drawing.Size(76, 16);
             this.label5.TabIndex = 12;
             this.label5.Text = "Total Seats";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 214);
+            this.label4.Location = new System.Drawing.Point(39, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
+            this.label4.Size = new System.Drawing.Size(63, 16);
             this.label4.TabIndex = 11;
             this.label4.Text = "End Date";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 162);
+            this.label3.Location = new System.Drawing.Point(39, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(66, 16);
             this.label3.TabIndex = 10;
             this.label3.Text = "Start Date";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 99);
+            this.label2.Location = new System.Drawing.Point(39, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 20);
+            this.label2.Size = new System.Drawing.Size(74, 16);
             this.label2.TabIndex = 9;
             this.label2.Text = "Destination";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 43);
+            this.label1.Location = new System.Drawing.Point(39, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 20);
+            this.label1.Size = new System.Drawing.Size(71, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Trip Name";
             // 
             // dtpEnd
             // 
-            this.dtpEnd.Location = new System.Drawing.Point(171, 214);
+            this.dtpEnd.Location = new System.Drawing.Point(152, 171);
+            this.dtpEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpEnd.Name = "dtpEnd";
-            this.dtpEnd.Size = new System.Drawing.Size(268, 26);
+            this.dtpEnd.Size = new System.Drawing.Size(239, 22);
             this.dtpEnd.TabIndex = 7;
             // 
             // dtpStart
             // 
-            this.dtpStart.Location = new System.Drawing.Point(171, 162);
+            this.dtpStart.Location = new System.Drawing.Point(152, 130);
+            this.dtpStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpStart.Name = "dtpStart";
-            this.dtpStart.Size = new System.Drawing.Size(268, 26);
+            this.dtpStart.Size = new System.Drawing.Size(239, 22);
             this.dtpStart.TabIndex = 6;
             // 
             // nudTotalSeats
             // 
-            this.nudTotalSeats.Location = new System.Drawing.Point(171, 265);
+            this.nudTotalSeats.Location = new System.Drawing.Point(152, 212);
+            this.nudTotalSeats.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudTotalSeats.Name = "nudTotalSeats";
-            this.nudTotalSeats.Size = new System.Drawing.Size(268, 26);
+            this.nudTotalSeats.Size = new System.Drawing.Size(238, 22);
             this.nudTotalSeats.TabIndex = 5;
             // 
             // nudAvailableSeats
             // 
-            this.nudAvailableSeats.Location = new System.Drawing.Point(171, 311);
+            this.nudAvailableSeats.Location = new System.Drawing.Point(152, 249);
+            this.nudAvailableSeats.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudAvailableSeats.Name = "nudAvailableSeats";
-            this.nudAvailableSeats.Size = new System.Drawing.Size(268, 26);
+            this.nudAvailableSeats.Size = new System.Drawing.Size(238, 22);
             this.nudAvailableSeats.TabIndex = 4;
             // 
             // tbDestination
             // 
-            this.tbDestination.Location = new System.Drawing.Point(171, 99);
+            this.tbDestination.Location = new System.Drawing.Point(152, 79);
+            this.tbDestination.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDestination.Name = "tbDestination";
-            this.tbDestination.Size = new System.Drawing.Size(268, 26);
+            this.tbDestination.Size = new System.Drawing.Size(239, 22);
             this.tbDestination.TabIndex = 3;
             // 
             // tbDescription
             // 
-            this.tbDescription.Location = new System.Drawing.Point(171, 398);
+            this.tbDescription.Location = new System.Drawing.Point(152, 318);
+            this.tbDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDescription.Multiline = true;
             this.tbDescription.Name = "tbDescription";
-            this.tbDescription.Size = new System.Drawing.Size(268, 79);
+            this.tbDescription.Size = new System.Drawing.Size(239, 64);
             this.tbDescription.TabIndex = 2;
             // 
             // tbPrice
             // 
-            this.tbPrice.Location = new System.Drawing.Point(171, 352);
+            this.tbPrice.Location = new System.Drawing.Point(152, 282);
+            this.tbPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPrice.Name = "tbPrice";
-            this.tbPrice.Size = new System.Drawing.Size(268, 26);
+            this.tbPrice.Size = new System.Drawing.Size(239, 22);
             this.tbPrice.TabIndex = 1;
             // 
             // tbTripName
             // 
-            this.tbTripName.Location = new System.Drawing.Point(171, 43);
+            this.tbTripName.Location = new System.Drawing.Point(152, 34);
+            this.tbTripName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTripName.Name = "tbTripName";
-            this.tbTripName.Size = new System.Drawing.Size(268, 26);
+            this.tbTripName.Size = new System.Drawing.Size(239, 22);
             this.tbTripName.TabIndex = 0;
             // 
             // AdminTripForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1142, 592);
+            this.ClientSize = new System.Drawing.Size(1015, 474);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvTripList);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminTripForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminTripForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTripList)).EndInit();
             this.groupBox1.ResumeLayout(false);

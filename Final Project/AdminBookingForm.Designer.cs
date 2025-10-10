@@ -36,20 +36,23 @@
             // 
             this.dgvBookingList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvBookingList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBookingList.Location = new System.Drawing.Point(34, 26);
+            this.dgvBookingList.Location = new System.Drawing.Point(30, 21);
+            this.dgvBookingList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvBookingList.Name = "dgvBookingList";
             this.dgvBookingList.RowHeadersWidth = 62;
             this.dgvBookingList.RowTemplate.Height = 28;
-            this.dgvBookingList.Size = new System.Drawing.Size(503, 331);
+            this.dgvBookingList.Size = new System.Drawing.Size(447, 265);
             this.dgvBookingList.TabIndex = 0;
             // 
             // AdminBookingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 483);
+            this.ClientSize = new System.Drawing.Size(817, 386);
             this.Controls.Add(this.dgvBookingList);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminBookingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminBookingForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookingList)).EndInit();
             this.ResumeLayout(false);
