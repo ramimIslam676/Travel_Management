@@ -56,18 +56,17 @@
             // lbTripName
             // 
             this.lbTripName.AutoSize = true;
-            this.lbTripName.Location = new System.Drawing.Point(55, 64);
+            this.lbTripName.Location = new System.Drawing.Point(12, 54);
             this.lbTripName.Name = "lbTripName";
-            this.lbTripName.Size = new System.Drawing.Size(81, 20);
+            this.lbTripName.Size = new System.Drawing.Size(71, 16);
             this.lbTripName.TabIndex = 0;
             this.lbTripName.Text = "Trip Name";
             // 
             // txtTripName
             // 
-            this.txtTripName.Location = new System.Drawing.Point(202, 60);
-            this.txtTripName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTripName.Location = new System.Drawing.Point(125, 48);
             this.txtTripName.Name = "txtTripName";
-            this.txtTripName.Size = new System.Drawing.Size(329, 26);
+            this.txtTripName.Size = new System.Drawing.Size(293, 22);
             this.txtTripName.TabIndex = 0;
             this.txtTripName.TextChanged += new System.EventHandler(this.txtTripName_TextChanged);
             // 
@@ -80,71 +79,70 @@
             // lbDestination
             // 
             this.lbDestination.AutoSize = true;
-            this.lbDestination.Location = new System.Drawing.Point(55, 104);
+            this.lbDestination.Location = new System.Drawing.Point(12, 89);
             this.lbDestination.Name = "lbDestination";
-            this.lbDestination.Size = new System.Drawing.Size(90, 20);
+            this.lbDestination.Size = new System.Drawing.Size(74, 16);
             this.lbDestination.TabIndex = 3;
             this.lbDestination.Text = "Destination";
             // 
             // lbStart
             // 
             this.lbStart.AutoSize = true;
-            this.lbStart.Location = new System.Drawing.Point(55, 146);
+            this.lbStart.Location = new System.Drawing.Point(12, 130);
             this.lbStart.Name = "lbStart";
-            this.lbStart.Size = new System.Drawing.Size(83, 20);
+            this.lbStart.Size = new System.Drawing.Size(66, 16);
             this.lbStart.TabIndex = 4;
             this.lbStart.Text = "Start Date";
             // 
             // lbEnd
             // 
             this.lbEnd.AutoSize = true;
-            this.lbEnd.Location = new System.Drawing.Point(55, 198);
+            this.lbEnd.Location = new System.Drawing.Point(12, 178);
             this.lbEnd.Name = "lbEnd";
-            this.lbEnd.Size = new System.Drawing.Size(77, 20);
+            this.lbEnd.Size = new System.Drawing.Size(63, 16);
             this.lbEnd.TabIndex = 5;
             this.lbEnd.Text = "End Date";
             // 
             // txtDestination
             // 
-            this.txtDestination.Location = new System.Drawing.Point(202, 100);
-            this.txtDestination.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDestination.Location = new System.Drawing.Point(125, 83);
             this.txtDestination.Name = "txtDestination";
-            this.txtDestination.Size = new System.Drawing.Size(329, 26);
+            this.txtDestination.Size = new System.Drawing.Size(293, 22);
             this.txtDestination.TabIndex = 1;
             // 
             // lbtotal
             // 
             this.lbtotal.AutoSize = true;
-            this.lbtotal.Location = new System.Drawing.Point(55, 254);
+            this.lbtotal.Location = new System.Drawing.Point(7, 226);
             this.lbtotal.Name = "lbtotal";
-            this.lbtotal.Size = new System.Drawing.Size(90, 20);
+            this.lbtotal.Size = new System.Drawing.Size(76, 16);
             this.lbtotal.TabIndex = 9;
             this.lbtotal.Text = "Total Seats";
             // 
             // lbavailable
             // 
             this.lbavailable.AutoSize = true;
-            this.lbavailable.Location = new System.Drawing.Point(55, 308);
+            this.lbavailable.Location = new System.Drawing.Point(7, 268);
             this.lbavailable.Name = "lbavailable";
-            this.lbavailable.Size = new System.Drawing.Size(118, 20);
+            this.lbavailable.Size = new System.Drawing.Size(102, 16);
             this.lbavailable.TabIndex = 10;
             this.lbavailable.Text = "Available Seats";
             // 
             // lbPrice
             // 
             this.lbPrice.AutoSize = true;
-            this.lbPrice.Location = new System.Drawing.Point(55, 358);
+            this.lbPrice.Location = new System.Drawing.Point(12, 312);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(44, 20);
+            this.lbPrice.Size = new System.Drawing.Size(38, 16);
             this.lbPrice.TabIndex = 11;
             this.lbPrice.Text = "Price";
             // 
             // lbDescription
             // 
             this.lbDescription.AutoSize = true;
-            this.lbDescription.Location = new System.Drawing.Point(55, 404);
+            this.lbDescription.Location = new System.Drawing.Point(480, 48);
             this.lbDescription.Name = "lbDescription";
-            this.lbDescription.Size = new System.Drawing.Size(89, 20);
+            this.lbDescription.Size = new System.Drawing.Size(75, 16);
             this.lbDescription.TabIndex = 12;
             this.lbDescription.Text = "Description";
             // 
@@ -152,55 +150,50 @@
             // 
             this.dtpStart.CustomFormat = "yyyy-MM-dd";
             this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpStart.Location = new System.Drawing.Point(202, 140);
-            this.dtpStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtpStart.Location = new System.Drawing.Point(125, 124);
             this.dtpStart.Name = "dtpStart";
-            this.dtpStart.Size = new System.Drawing.Size(329, 26);
+            this.dtpStart.Size = new System.Drawing.Size(293, 22);
             this.dtpStart.TabIndex = 2;
             // 
             // dtpEnd
             // 
             this.dtpEnd.CustomFormat = "yyyy-MM-dd";
             this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpEnd.Location = new System.Drawing.Point(202, 198);
-            this.dtpEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtpEnd.Location = new System.Drawing.Point(125, 172);
             this.dtpEnd.Name = "dtpEnd";
-            this.dtpEnd.Size = new System.Drawing.Size(329, 26);
+            this.dtpEnd.Size = new System.Drawing.Size(293, 22);
             this.dtpEnd.TabIndex = 3;
             // 
             // numTotal
             // 
-            this.numTotal.Location = new System.Drawing.Point(202, 251);
-            this.numTotal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.numTotal.Location = new System.Drawing.Point(125, 220);
             this.numTotal.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.numTotal.Name = "numTotal";
-            this.numTotal.Size = new System.Drawing.Size(321, 26);
+            this.numTotal.Size = new System.Drawing.Size(293, 22);
             this.numTotal.TabIndex = 4;
             this.numTotal.ValueChanged += new System.EventHandler(this.numTotal_ValueChanged);
             // 
             // numAvailable
             // 
-            this.numAvailable.Location = new System.Drawing.Point(202, 300);
-            this.numAvailable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.numAvailable.Location = new System.Drawing.Point(125, 262);
             this.numAvailable.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.numAvailable.Name = "numAvailable";
-            this.numAvailable.Size = new System.Drawing.Size(321, 26);
+            this.numAvailable.Size = new System.Drawing.Size(293, 22);
             this.numAvailable.TabIndex = 5;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(202, 354);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPrice.Location = new System.Drawing.Point(125, 306);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(329, 26);
+            this.txtPrice.Size = new System.Drawing.Size(293, 22);
             this.txtPrice.TabIndex = 6;
             this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
@@ -213,40 +206,43 @@
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(202, 404);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDescription.Location = new System.Drawing.Point(483, 83);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(329, 94);
+            this.txtDescription.Size = new System.Drawing.Size(283, 111);
             this.txtDescription.TabIndex = 7;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(621, 475);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(516, 344);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(104, 48);
+            this.btnSave.Size = new System.Drawing.Size(92, 38);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(755, 475);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.BackColor = System.Drawing.Color.Red;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(662, 344);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(104, 48);
+            this.btnCancel.Size = new System.Drawing.Size(92, 38);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // CreateTripForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtDescription);
@@ -265,7 +261,6 @@
             this.Controls.Add(this.lbDestination);
             this.Controls.Add(this.txtTripName);
             this.Controls.Add(this.lbTripName);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CreateTripForm";
             this.Text = "CreateTripForm";
             this.Load += new System.EventHandler(this.CreateTripForm_Load);

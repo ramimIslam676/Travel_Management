@@ -47,7 +47,8 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(585, 378);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(176, 46);
@@ -58,7 +59,8 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Location = new System.Drawing.Point(302, 378);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(176, 46);
@@ -69,8 +71,8 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnCreate.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.Location = new System.Drawing.Point(27, 378);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(185, 46);
@@ -98,20 +100,22 @@
             // 
             // lnkLogout
             // 
-            this.lnkLogout.ActiveLinkColor = System.Drawing.Color.Red;
+            this.lnkLogout.ActiveLinkColor = System.Drawing.Color.Transparent;
             this.lnkLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lnkLogout.AutoSize = true;
-            this.lnkLogout.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lnkLogout.BackColor = System.Drawing.Color.Red;
             this.lnkLogout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lnkLogout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkLogout.LinkColor = System.Drawing.Color.DarkSlateGray;
-            this.lnkLogout.Location = new System.Drawing.Point(739, 24);
+            this.lnkLogout.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.lnkLogout.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkLogout.LinkColor = System.Drawing.Color.Black;
+            this.lnkLogout.Location = new System.Drawing.Point(730, 33);
             this.lnkLogout.Name = "lnkLogout";
-            this.lnkLogout.Size = new System.Drawing.Size(80, 32);
+            this.lnkLogout.Size = new System.Drawing.Size(61, 22);
             this.lnkLogout.TabIndex = 4;
             this.lnkLogout.TabStop = true;
             this.lnkLogout.Text = "Logout";
             this.lnkLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lnkLogout.VisitedLinkColor = System.Drawing.Color.Transparent;
             this.lnkLogout.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkLogout_LinkClicked);
             // 
             // lbTitle
@@ -120,12 +124,13 @@
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.Location = new System.Drawing.Point(13, 13);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(425, 54);
+            this.lbTitle.Size = new System.Drawing.Size(349, 45);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Organizer Dashboard";
             // 
             // OrganizerForm
             // 
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(902, 513);
             this.Controls.Add(this.panelCard);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
