@@ -119,8 +119,6 @@ namespace Final_Project
 
                 this.DialogResult = DialogResult.OK;
                 this.Close();
-                CustomerForm customerForm= new CustomerForm(Users,TotalSeat);
-                customerForm.Show();
             }
             catch (Exception ex)
             {
