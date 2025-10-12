@@ -175,5 +175,11 @@ namespace Final_Project
             UpDownSelectNumberOfSeat.Value = 0;
             txtAmount.Text = "";
         }
+
+        private void btnShowBooking_Click(object sender, EventArgs e)
+        {
+            CustomerShowBooking bookingForm = new CustomerShowBooking(CustomerUser);
+            bookingForm.Show();
+        }
     }
 }

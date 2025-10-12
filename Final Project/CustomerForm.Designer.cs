@@ -44,6 +44,7 @@
             this.txtAmount = new System.Windows.Forms.TextBox();
             this.lblAmount = new System.Windows.Forms.Label();
             this.UpDownSelectNumberOfSeat = new System.Windows.Forms.NumericUpDown();
+            this.btnShowBooking = new System.Windows.Forms.Button();
             this.pnlDgvShowTrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowTrip)).BeginInit();
             this.panel1.SuspendLayout();
@@ -148,6 +149,7 @@
             // 
             this.panel1.AutoSize = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btnShowBooking);
             this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.btnBookTrip);
@@ -179,7 +181,7 @@
             // 
             this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.Black;
-            this.btnLogOut.Location = new System.Drawing.Point(89, 441);
+            this.btnLogOut.Location = new System.Drawing.Point(24, 19);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(146, 45);
@@ -232,6 +234,16 @@
             this.UpDownSelectNumberOfSeat.TabIndex = 7;
             this.UpDownSelectNumberOfSeat.ValueChanged += new System.EventHandler(this.UpDownSelectNumberOfSeat_ValueChanged);
             // 
+            // btnShowBooking
+            // 
+            this.btnShowBooking.Location = new System.Drawing.Point(75, 445);
+            this.btnShowBooking.Name = "btnShowBooking";
+            this.btnShowBooking.Size = new System.Drawing.Size(139, 39);
+            this.btnShowBooking.TabIndex = 13;
+            this.btnShowBooking.Text = "Show Booking";
+            this.btnShowBooking.UseVisualStyleBackColor = true;
+            this.btnShowBooking.Click += new System.EventHandler(this.btnShowBooking_Click);
+            // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -278,5 +290,6 @@
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnBookTrip;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnShowBooking;
     }
 }
