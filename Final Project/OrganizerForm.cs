@@ -119,5 +119,11 @@ namespace Final_Project
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OrganizerShowForm organizerShowForm = new OrganizerShowForm(OrganizerUser);
+            organizerShowForm.Show();
+        }
     }
 }

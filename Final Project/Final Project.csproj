@@ -164,6 +164,12 @@
     <Compile Include="OrganizerForm.Designer.cs">
       <DependentUpon>OrganizerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrganizerShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerShowForm.Designer.cs">
+      <DependentUpon>OrganizerShowForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrganizerForm.resx">
       <DependentUpon>OrganizerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizerShowForm.resx">
+      <DependentUpon>OrganizerShowForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
