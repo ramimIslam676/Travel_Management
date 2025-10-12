@@ -81,10 +81,6 @@ namespace Final_Project
                 pd.PrintPage += (s, ev) =>
                 {
                     ev.Graphics.DrawString(content, new Font("Arial", 12), Brushes.Black, 100, 100);
-                    //ev.Graphics.DrawString("Payment Slip", new Font("Arial", 16, FontStyle.Bold), Brushes.Black, 100, 100);
-                    //ev.Graphics.DrawString($"Name: {customerBooking.UserName}", new Font("Arial", 12), Brushes.Black, 100, 150);
-                    //ev.Graphics.DrawString($"Amount: {amount}", new Font("Arial", 12), Brushes.Black, 100, 180);
-                    //ev.Graphics.DrawString($"Date: {date}", new Font("Arial", 12), Brushes.Black, 100, 210);
                 };
                 pd.Print();
                 tbBookingId.Text = "";
