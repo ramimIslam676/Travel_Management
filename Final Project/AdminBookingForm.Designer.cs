@@ -51,6 +51,7 @@
             this.dgvBookingList.RowTemplate.Height = 28;
             this.dgvBookingList.Size = new System.Drawing.Size(503, 331);
             this.dgvBookingList.TabIndex = 0;
+            this.dgvBookingList.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookingList_CellContentDoubleClick_1);
             // 
             // btnCancel
             // 
@@ -104,6 +105,7 @@
             this.buttonCancel.TabIndex = 3;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonDelete
             // 
@@ -113,6 +115,7 @@
             this.buttonDelete.TabIndex = 4;
             this.buttonDelete.Text = "delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // AdminBookingForm
             // 

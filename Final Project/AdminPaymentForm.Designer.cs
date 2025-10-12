@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dgvAdminPayment = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbPaymentId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdminPayment)).BeginInit();
@@ -45,13 +45,14 @@
             this.dgvAdminPayment.RowTemplate.Height = 28;
             this.dgvAdminPayment.Size = new System.Drawing.Size(432, 283);
             this.dgvAdminPayment.TabIndex = 0;
+            this.dgvAdminPayment.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAdminPayment_CellContentDoubleClick);
             // 
-            // textBox1
+            // tbPaymentId
             // 
-            this.textBox1.Location = new System.Drawing.Point(655, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 1;
+            this.tbPaymentId.Location = new System.Drawing.Point(655, 49);
+            this.tbPaymentId.Name = "tbPaymentId";
+            this.tbPaymentId.Size = new System.Drawing.Size(100, 26);
+            this.tbPaymentId.TabIndex = 1;
             // 
             // label1
             // 
@@ -70,6 +71,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AdminPaymentForm
             // 
@@ -78,7 +80,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbPaymentId);
             this.Controls.Add(this.dgvAdminPayment);
             this.Name = "AdminPaymentForm";
             this.Text = "AdminPaymentForm";
@@ -91,7 +93,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvAdminPayment;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbPaymentId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
     }
