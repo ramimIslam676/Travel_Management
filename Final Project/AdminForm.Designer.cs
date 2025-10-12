@@ -41,72 +41,84 @@
             // 
             // btnUserInfo
             // 
-            this.btnUserInfo.Location = new System.Drawing.Point(17, 36);
+            this.btnUserInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnUserInfo.Location = new System.Drawing.Point(15, 29);
+            this.btnUserInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUserInfo.Name = "btnUserInfo";
-            this.btnUserInfo.Size = new System.Drawing.Size(182, 37);
+            this.btnUserInfo.Size = new System.Drawing.Size(162, 30);
             this.btnUserInfo.TabIndex = 0;
             this.btnUserInfo.Text = "Show Users";
-            this.btnUserInfo.UseVisualStyleBackColor = true;
+            this.btnUserInfo.UseVisualStyleBackColor = false;
             this.btnUserInfo.Click += new System.EventHandler(this.btnUserInfo_Click);
             // 
             // btnTrips
             // 
-            this.btnTrips.Location = new System.Drawing.Point(17, 142);
+            this.btnTrips.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnTrips.Location = new System.Drawing.Point(15, 114);
+            this.btnTrips.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTrips.Name = "btnTrips";
-            this.btnTrips.Size = new System.Drawing.Size(182, 37);
+            this.btnTrips.Size = new System.Drawing.Size(162, 30);
             this.btnTrips.TabIndex = 1;
             this.btnTrips.Text = "Show Trips";
-            this.btnTrips.UseVisualStyleBackColor = true;
+            this.btnTrips.UseVisualStyleBackColor = false;
             this.btnTrips.Click += new System.EventHandler(this.btnTrips_Click);
             // 
             // btnShowBookings
             // 
-            this.btnShowBookings.Location = new System.Drawing.Point(17, 199);
+            this.btnShowBookings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnShowBookings.Location = new System.Drawing.Point(15, 159);
+            this.btnShowBookings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnShowBookings.Name = "btnShowBookings";
-            this.btnShowBookings.Size = new System.Drawing.Size(182, 40);
+            this.btnShowBookings.Size = new System.Drawing.Size(162, 32);
             this.btnShowBookings.TabIndex = 2;
             this.btnShowBookings.Text = "Show Bookings";
-            this.btnShowBookings.UseVisualStyleBackColor = true;
+            this.btnShowBookings.UseVisualStyleBackColor = false;
             this.btnShowBookings.Click += new System.EventHandler(this.btnShowBookings_Click);
             // 
             // btnShowPayment
             // 
-            this.btnShowPayment.Location = new System.Drawing.Point(17, 259);
+            this.btnShowPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnShowPayment.Location = new System.Drawing.Point(15, 207);
+            this.btnShowPayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnShowPayment.Name = "btnShowPayment";
-            this.btnShowPayment.Size = new System.Drawing.Size(182, 37);
+            this.btnShowPayment.Size = new System.Drawing.Size(162, 30);
             this.btnShowPayment.TabIndex = 3;
             this.btnShowPayment.Text = "Show Payments";
-            this.btnShowPayment.UseVisualStyleBackColor = true;
+            this.btnShowPayment.UseVisualStyleBackColor = false;
             this.btnShowPayment.Click += new System.EventHandler(this.btnShowPayment_Click);
             // 
             // btnAddAdmin
             // 
-            this.btnAddAdmin.Location = new System.Drawing.Point(17, 88);
+            this.btnAddAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAddAdmin.Location = new System.Drawing.Point(15, 70);
+            this.btnAddAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddAdmin.Name = "btnAddAdmin";
-            this.btnAddAdmin.Size = new System.Drawing.Size(182, 36);
+            this.btnAddAdmin.Size = new System.Drawing.Size(162, 29);
             this.btnAddAdmin.TabIndex = 4;
             this.btnAddAdmin.Text = "Add Admins";
-            this.btnAddAdmin.UseVisualStyleBackColor = true;
+            this.btnAddAdmin.UseVisualStyleBackColor = false;
             this.btnAddAdmin.Click += new System.EventHandler(this.btnAddAdmin_Click);
             // 
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWelcome.Location = new System.Drawing.Point(363, 34);
+            this.labelWelcome.Location = new System.Drawing.Point(323, 27);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(143, 86);
+            this.labelWelcome.Size = new System.Drawing.Size(120, 71);
             this.labelWelcome.TabIndex = 5;
             this.labelWelcome.Text = "label";
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(66, 399);
+            this.btnLogOut.BackColor = System.Drawing.Color.Red;
+            this.btnLogOut.Location = new System.Drawing.Point(59, 319);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(92, 37);
+            this.btnLogOut.Size = new System.Drawing.Size(82, 30);
             this.btnLogOut.TabIndex = 6;
             this.btnLogOut.Text = "Log Out";
-            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // groupBox1
@@ -116,21 +128,25 @@
             this.groupBox1.Controls.Add(this.btnTrips);
             this.groupBox1.Controls.Add(this.btnShowPayment);
             this.groupBox1.Controls.Add(this.btnShowBookings);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(12, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(230, 333);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(204, 266);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Choose";
             // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 469);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(731, 375);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.labelWelcome);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminForm";
             this.Text = "AdminForm";
             this.Load += new System.EventHandler(this.AdminForm_Load);

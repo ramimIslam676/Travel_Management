@@ -70,30 +70,34 @@
             // 
             // btnRegister
             // 
+            this.btnRegister.BackColor = System.Drawing.Color.Red;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Location = new System.Drawing.Point(288, 126);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(100, 28);
+            this.btnRegister.Size = new System.Drawing.Size(100, 38);
             this.btnRegister.TabIndex = 11;
             this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnLogin
             // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(160, 126);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(100, 28);
+            this.btnLogin.Size = new System.Drawing.Size(93, 38);
             this.btnLogin.TabIndex = 10;
             this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(160, 94);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(228, 22);
             this.tbPassword.TabIndex = 9;
@@ -101,7 +105,7 @@
             // tbPhnNumber
             // 
             this.tbPhnNumber.Location = new System.Drawing.Point(160, 62);
-            this.tbPhnNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPhnNumber.Margin = new System.Windows.Forms.Padding(4);
             this.tbPhnNumber.Name = "tbPhnNumber";
             this.tbPhnNumber.Size = new System.Drawing.Size(228, 22);
             this.tbPhnNumber.TabIndex = 8;
@@ -130,12 +134,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginFrame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Login ";
             this.Load += new System.EventHandler(this.LoginFrame_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

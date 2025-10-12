@@ -86,6 +86,7 @@
             // 
             // btnUpdateUser
             // 
+            this.btnUpdateUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnUpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateUser.Location = new System.Drawing.Point(123, 350);
             this.btnUpdateUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -93,7 +94,7 @@
             this.btnUpdateUser.Size = new System.Drawing.Size(172, 28);
             this.btnUpdateUser.TabIndex = 29;
             this.btnUpdateUser.Text = "Update User";
-            this.btnUpdateUser.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.UseVisualStyleBackColor = false;
             this.btnUpdateUser.Click += new System.EventHandler(this.btnRegistration_Click);
             // 
             // comboBoxUser
@@ -108,7 +109,7 @@
             // tbAddress
             // 
             this.tbAddress.Location = new System.Drawing.Point(123, 244);
-            this.tbAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbAddress.Margin = new System.Windows.Forms.Padding(4);
             this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(228, 73);
@@ -118,7 +119,7 @@
             // 
             this.tbPhnNumber.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.tbPhnNumber.Location = new System.Drawing.Point(123, 167);
-            this.tbPhnNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPhnNumber.Margin = new System.Windows.Forms.Padding(4);
             this.tbPhnNumber.Name = "tbPhnNumber";
             this.tbPhnNumber.Size = new System.Drawing.Size(228, 22);
             this.tbPhnNumber.TabIndex = 26;
@@ -127,7 +128,7 @@
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(123, 130);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(228, 22);
             this.tbPassword.TabIndex = 25;
@@ -135,7 +136,7 @@
             // tbEmail
             // 
             this.tbEmail.Location = new System.Drawing.Point(123, 96);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(228, 22);
             this.tbEmail.TabIndex = 24;
@@ -143,7 +144,7 @@
             // tbUserName
             // 
             this.tbUserName.Location = new System.Drawing.Point(123, 60);
-            this.tbUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUserName.Margin = new System.Windows.Forms.Padding(4);
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Size = new System.Drawing.Size(228, 22);
             this.tbUserName.TabIndex = 23;
@@ -206,6 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(961, 473);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvUserList);

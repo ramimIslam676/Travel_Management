@@ -96,13 +96,15 @@
             // 
             // btnUpdateTrip
             // 
+            this.btnUpdateTrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnUpdateTrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateTrip.Location = new System.Drawing.Point(175, 400);
             this.btnUpdateTrip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateTrip.Name = "btnUpdateTrip";
             this.btnUpdateTrip.Size = new System.Drawing.Size(180, 28);
             this.btnUpdateTrip.TabIndex = 16;
             this.btnUpdateTrip.Text = "Update Trip";
-            this.btnUpdateTrip.UseVisualStyleBackColor = true;
+            this.btnUpdateTrip.UseVisualStyleBackColor = false;
             this.btnUpdateTrip.Click += new System.EventHandler(this.btnUpdateTrip_Click);
             // 
             // label8
@@ -246,6 +248,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(1015, 474);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvTripList);

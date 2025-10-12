@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnReturnLogIn = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             this.groupBox1.Size = new System.Drawing.Size(436, 354);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Register";
             // 
             // radioButtonTerms
             // 
@@ -86,6 +87,7 @@
             // 
             // btnRegistration
             // 
+            this.btnRegistration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistration.Location = new System.Drawing.Point(138, 321);
             this.btnRegistration.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -93,7 +95,7 @@
             this.btnRegistration.Size = new System.Drawing.Size(172, 28);
             this.btnRegistration.TabIndex = 15;
             this.btnRegistration.Text = "Confirm Registration";
-            this.btnRegistration.UseVisualStyleBackColor = true;
+            this.btnRegistration.UseVisualStyleBackColor = false;
             this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
             // 
             // comboBoxUser
@@ -108,7 +110,7 @@
             // tbAddress
             // 
             this.tbAddress.Location = new System.Drawing.Point(138, 214);
-            this.tbAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbAddress.Margin = new System.Windows.Forms.Padding(4);
             this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(228, 73);
@@ -117,7 +119,7 @@
             // tbPhnNumber
             // 
             this.tbPhnNumber.Location = new System.Drawing.Point(138, 138);
-            this.tbPhnNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPhnNumber.Margin = new System.Windows.Forms.Padding(4);
             this.tbPhnNumber.Name = "tbPhnNumber";
             this.tbPhnNumber.Size = new System.Drawing.Size(228, 22);
             this.tbPhnNumber.TabIndex = 12;
@@ -125,7 +127,7 @@
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(138, 100);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(228, 22);
@@ -134,7 +136,7 @@
             // tbEmail
             // 
             this.tbEmail.Location = new System.Drawing.Point(138, 66);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(228, 22);
             this.tbEmail.TabIndex = 10;
@@ -142,7 +144,7 @@
             // tbUserName
             // 
             this.tbUserName.Location = new System.Drawing.Point(138, 30);
-            this.tbUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUserName.Margin = new System.Windows.Forms.Padding(4);
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Size = new System.Drawing.Size(228, 22);
             this.tbUserName.TabIndex = 9;
@@ -203,20 +205,34 @@
             // 
             // btnReturnLogIn
             // 
-            this.btnReturnLogIn.Location = new System.Drawing.Point(580, 314);
+            this.btnReturnLogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnReturnLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnLogIn.Location = new System.Drawing.Point(580, 298);
             this.btnReturnLogIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReturnLogIn.Name = "btnReturnLogIn";
-            this.btnReturnLogIn.Size = new System.Drawing.Size(88, 26);
+            this.btnReturnLogIn.Size = new System.Drawing.Size(100, 42);
             this.btnReturnLogIn.TabIndex = 2;
             this.btnReturnLogIn.Text = "Log In";
-            this.btnReturnLogIn.UseVisualStyleBackColor = true;
+            this.btnReturnLogIn.UseVisualStyleBackColor = false;
             this.btnReturnLogIn.Click += new System.EventHandler(this.btnReturnLogIn_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(555, 262);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(166, 16);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Already Have an Account?";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(768, 390);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnReturnLogIn);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -226,6 +242,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -247,5 +264,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnReturnLogIn;
+        private System.Windows.Forms.Label label7;
     }
 }

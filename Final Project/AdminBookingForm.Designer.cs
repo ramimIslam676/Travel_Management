@@ -44,12 +44,12 @@
             // 
             this.dgvBookingList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvBookingList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBookingList.Location = new System.Drawing.Point(34, 26);
+            this.dgvBookingList.Location = new System.Drawing.Point(30, 21);
             this.dgvBookingList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvBookingList.Name = "dgvBookingList";
             this.dgvBookingList.RowHeadersWidth = 62;
             this.dgvBookingList.RowTemplate.Height = 28;
-            this.dgvBookingList.Size = new System.Drawing.Size(503, 331);
+            this.dgvBookingList.Size = new System.Drawing.Size(447, 265);
             this.dgvBookingList.TabIndex = 0;
             this.dgvBookingList.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookingList_CellContentDoubleClick_1);
             // 
@@ -71,7 +71,7 @@
             // 
             this.tbBookingId.Location = new System.Drawing.Point(0, 0);
             this.tbBookingId.Name = "tbBookingId";
-            this.tbBookingId.Size = new System.Drawing.Size(100, 26);
+            this.tbBookingId.Size = new System.Drawing.Size(100, 22);
             this.tbBookingId.TabIndex = 0;
             // 
             // label1
@@ -84,44 +84,51 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(689, 76);
+            this.label2.Location = new System.Drawing.Point(612, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 20);
+            this.label2.Size = new System.Drawing.Size(73, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Booking ID";
             // 
             // txtBookingId
             // 
-            this.txtBookingId.Location = new System.Drawing.Point(820, 76);
+            this.txtBookingId.Location = new System.Drawing.Point(729, 61);
+            this.txtBookingId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBookingId.Name = "txtBookingId";
-            this.txtBookingId.Size = new System.Drawing.Size(100, 26);
+            this.txtBookingId.Size = new System.Drawing.Size(89, 22);
             this.txtBookingId.TabIndex = 2;
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(665, 197);
+            this.buttonCancel.BackColor = System.Drawing.Color.Red;
+            this.buttonCancel.Location = new System.Drawing.Point(591, 158);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(112, 39);
+            this.buttonCancel.Size = new System.Drawing.Size(100, 31);
             this.buttonCancel.TabIndex = 3;
             this.buttonCancel.Text = "Cancel";
-            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(845, 197);
+            this.buttonDelete.BackColor = System.Drawing.Color.Red;
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.Location = new System.Drawing.Point(751, 158);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(114, 39);
+            this.buttonDelete.Size = new System.Drawing.Size(101, 31);
             this.buttonDelete.TabIndex = 4;
-            this.buttonDelete.Text = "delete";
-            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // AdminBookingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 604);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(919, 483);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.txtBookingId);

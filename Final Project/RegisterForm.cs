@@ -111,5 +111,10 @@ namespace Final_Project
             LoginFrame loginFrame = new LoginFrame();
             loginFrame.Show();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
